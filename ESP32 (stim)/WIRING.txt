@@ -1,0 +1,26 @@
+ESP32 DevKit V1 -> tVNS Howland circuit
+=======================================
+
+Circuit change from the STM32 version: none. Only the signal sources move.
+
+  ESP32 pin        Goes to                                   Required
+  ---------------  ----------------------------------------  --------
+  GPIO25 (D25)     Free end of R3 (vin node)                 yes
+  GPIO26 (D26)     Free end of R1 (lifted off GND)           yes
+  GND              Battery midpoint (circuit GND)            yes
+  100k resistor    Across GPIO25 and GPIO26                  recommended
+                   (holds current near zero during reset;
+                    use 100k, not 10k: ESP32 DAC is weak)
+  GPIO27 (D27)     Enable input on the analog side, if any   optional
+
+  Do NOT connect +9 V / -9 V to the ESP32. Power the ESP32 from USB.
+  Do NOT power the ESP32 from VIN while USB is plugged in.
+
+Order: USB in and booted -> batteries on -> "on". Shutdown in reverse.
+
+On-board: BOOT button (GPIO0) = emergency stop; blue LED (GPIO2) = stimulating.
+Console: Serial Monitor / PuTTY at 115200 on the ESP32's COM port.
+Opening the port resets the ESP32 (normal; output starts OFF).
+
+Expected at rest: GPIO25 and GPIO26 both ~1.65 V (code 128).
+Expected at 5 mA: GPIO25 steps to ~1.65 +/- 0.50 V (39 codes = ~5.03 mA).
