@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlphaX Controller</title>
+<style>
+  :root{
+    --purple:#4C1D6B; --purple-light:#8A4FB3; --purple-pale:#F4F1F7;
+    --border:#E3DAEA; --text:#1A1A1A; --muted:#5A5A5A;
+    --red:#B23A54; --green:#2E7D5B; --bg:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:16px; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    max-width:520px; margin-inline:auto;
+  }
+  h1{font-size:22px; margin:0 0 2px}
+  .sub{color:var(--muted); font-size:13px; margin-bottom:18px}
+
+  .card{
+    background:var(--purple-pale); border:1px solid var(--border);
+    border-radius:12px; padding:16px; margin-bottom:14px;
+  }
+  .row{display:flex; align-items:center; justify-content:space-between; gap:10px}
+
+  button{
+    font:inherit; font-weight:600; border-radius:10px; border:none;
+    padding:13px 16px; cursor:pointer; transition:opacity .15s;
+  }
+  button:disabled{opacity:.4; cursor:not-allowed}
+  .primary{background:var(--purple); color:#fff; width:100%}
+  .danger{background:var(--red); color:#fff; width:100%}
+  .ghost{background:#fff; color:var(--purple); border:1.5px solid var(--purple)}
+
+  .status-dot{width:9px;height:9px;border-radius:50%;background:#bbb;display:inline-block;margin-right:7px}
+  .status-dot.on{background:var(--green)}
+
+  .metrics{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:4px}
+  .metric{background:#fff; border:1px solid var(--border); border-radius:10px; padding:11px; text-align:center}
+  .metric .v{font-size:23px; font-weight:700; color:var(--purple); line-height:1.15}
+  .metric .l{font-size:10.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px; margin-top:3px}
+
+  input[type=range]{width:100%; accent-color:var(--purple); margin:10px 0 2px}
+  .presets{display:flex; gap:8px; margin-top:8px}
+  .presets button{flex:1; padding:9px; font-size:14px}
+  .presets button.sel{background:var(--purple); color:#fff; border-color:var(--purple)}
+
+  .timer{font-size:40px; font-weight:700; text-align:center; color:var(--purple); letter-spacing:1px}
+  .state{text-align:center; font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:2px}
+
+  canvas{width:100%; height:110px; display:block; background:#fff;
+         border:1px solid var(--border); border-radius:10px; margin-top:8px}
+
+  #log{font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11.5px;
+       color:var(--muted); max-height:120px; overflow-y:auto; white-space:pre-wrap; line-height:1.5}
+  .warn{background:#FFF4E5; border:1px solid #F0D9B5; color:#6B4A14;
+        font-size:12px; padding:10px 12px; border-radius:9px; margin-bottom:14px}
+  .hint{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+
+<h1>AlphaX Controller</h1>
+<div class="sub">Prototype session control &amp; biosignal monitor</div>
+
+<div class="warn" id="compat" hidden>
+  Web Bluetooth isn't available in this browser. Use Chrome or Edge on desktop,
+  or Chrome on Android. iOS Safari does not support Web Bluetooth.
+</div>
+
+<div class="card">
+  <div class="row">
+    <div><span class="status-dot" id="dot"></span><span id="conn">Not connected</span></div>
+    <button class="ghost" id="btnConnect">Connect</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="timer" id="timer">--:--</div>
+  <div class="state" id="state">idle</div>
+  <div class="metrics">
+    <div class="metric"><div class="v" id="mBpm">--</div><div class="l">BPM</div></div>
+    <div class="metric"><div class="v" id="mHrv">--</div><div class="l">RMSSD ms</div></div>
+    <div class="metric"><div class="v" id="mInt">--</div><div class="l">Intensity</div></div>
+  </div>
+  <canvas id="chart" width="600" height="220"></canvas>
+  <div class="hint">RMSSD over the session — higher means more parasympathetic activity.</div>
+</div>
+
+<div class="card">
+  <div class="row"><strong>Intensity</strong><span id="intLabel">40%</span></div>
+  <input type="range" id="intensity" min="0" max="80" step="5" value="40">
+  <div class="hint">Firmware caps output at 80%.</div>
+
+  <div class="row" style="margin-top:16px"><strong>Duration</strong></div>
+  <div class="presets" id="presets">
+    <button class="ghost" data-min="5">5 min</button>
+    <button class="ghost sel" data-min="20">20 min</button>
+    <button class="ghost" data-min="40">40 min</button>
+  </div>
+</div>
+
+<button class="primary" id="btnStart" disabled>Start session</button>
+<div style="height:10px"></div>
+<button class="danger" id="btnStop" disabled>Stop</button>
+
+<div class="card" style="margin-top:14px">
+  <strong style="font-size:13px">Activity log</strong>
+  <div id="log" style="margin-top:7px">Ready.</div>
+</div>
+
+<script>
+const SERVICE_UUID = '6e5a0001-b5a3-f393-e0a9-e50e24dcca9e';
+const CMD_UUID     = '6e5a0002-b5a3-f393-e0a9-e50e24dcca9e';
+const STATUS_UUID  = '6e5a0003-b5a3-f393-e0a9-e50e24dcca9e';
+
+let device = null, cmdChar = null, statusChar = null;
+let minutes = 20;
+const hrvHistory = [];
+
+const $ = id => document.getElementById(id);
+
+if (!navigator.bluetooth) $('compat').hidden = false;
+
+function log(msg){
+  const t = new Date().toLocaleTimeString();
+  $('log').textContent = `[${t}] ${msg}\n` + $('log').textContent;
+}
+
+async function connect(){
+  try{
+    log('Scanning for AlphaX device…');
+    device = await navigator.bluetooth.requestDevice({
+      filters: [{ services: [SERVICE_UUID] }]
+    });
+    device.addEventListener('gattserverdisconnected', onDisconnected);
+
+    const server  = await device.gatt.connect();
+    const service = await server.getPrimaryService(SERVICE_UUID);
+    cmdChar    = await service.getCharacteristic(CMD_UUID);
+    statusChar = await service.getCharacteristic(STATUS_UUID);
+
+    await statusChar.startNotifications();
+    statusChar.addEventListener('characteristicvaluechanged', onStatus);
+
+    $('conn').textContent = device.name || 'Connected';
+    $('dot').classList.add('on');
+    $('btnConnect').textContent = 'Disconnect';
+    $('btnStart').disabled = false;
+    $('btnStop').disabled  = false;
+    log('Connected to ' + (device.name || 'device'));
+  }catch(err){
+    log('Connection failed: ' + err.message);
+  }
+}
+
+function onDisconnected(){
+  $('conn').textContent = 'Not connected';
+  $('dot').classList.remove('on');
+  $('btnConnect').textContent = 'Connect';
+  $('btnStart').disabled = true;
+  $('btnStop').disabled  = true;
+  $('timer').textContent = '--:--';
+  $('state').textContent = 'idle';
+  log('Disconnected — device stops output automatically.');
+}
+
+function onStatus(e){
+  const txt = new TextDecoder().decode(e.target.value);
+  let d;
+  try { d = JSON.parse(txt); } catch { return; }
+
+  const m = Math.floor(d.remaining / 60), s = d.remaining % 60;
+  $('timer').textContent = d.remaining > 0
+    ? `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}` : '--:--';
+  $('state').textContent = (d.state || '').replace('_',' ');
+  $('mBpm').textContent  = d.bpm   > 0 ? Math.round(d.bpm)   : '--';
+  $('mHrv').textContent  = d.rmssd > 0 ? Math.round(d.rmssd) : '--';
+  $('mInt').textContent  = d.intensity + '%';
+
+  if (d.rmssd > 0){
+    hrvHistory.push(d.rmssd);
+    if (hrvHistory.length > 240) hrvHistory.shift();
+    drawChart();
+  }
+}
+
+async function send(cmd){
+  if (!cmdChar) { log('Not connected.'); return; }
+  await cmdChar.writeValue(new TextEncoder().encode(cmd));
+  log('Sent: ' + cmd);
+}
+
+function drawChart(){
+  const c = $('chart'), ctx = c.getContext('2d');
+  const W = c.width, H = c.height, pad = 14;
+  ctx.clearRect(0,0,W,H);
+  if (hrvHistory.length < 2) return;
+
+  const lo = Math.min(...hrvHistory), hi = Math.max(...hrvHistory);
+  const span = (hi - lo) || 1;
+
+  ctx.strokeStyle = '#E3DAEA'; ctx.lineWidth = 1;
+  for (let i=0;i<=3;i++){
+    const y = pad + (H-2*pad)*i/3;
+    ctx.beginPath(); ctx.moveTo(pad,y); ctx.lineTo(W-pad,y); ctx.stroke();
+  }
+
+  ctx.strokeStyle = '#4C1D6B'; ctx.lineWidth = 2.5; ctx.beginPath();
+  hrvHistory.forEach((v,i)=>{
+    const x = pad + (W-2*pad) * i/(hrvHistory.length-1);
+    const y = H - pad - ((v-lo)/span)*(H-2*pad);
+    i ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+  });
+  ctx.stroke();
+
+  ctx.fillStyle = '#5A5A5A'; ctx.font = '11px sans-serif';
+  ctx.fillText(Math.round(hi)+' ms', pad+2, pad+10);
+  ctx.fillText(Math.round(lo)+' ms', pad+2, H-pad-2);
+}
+
+$('btnConnect').onclick = () => {
+  if (device && device.gatt.connected) device.gatt.disconnect();
+  else connect();
+};
+$('btnStart').onclick = () => send(`START:${$('intensity').value}:${minutes}`);
+$('btnStop').onclick  = () => send('STOP');
+
+$('intensity').oninput = e => {
+  $('intLabel').textContent = e.target.value + '%';
+};
+$('intensity').onchange = e => {
+  if (cmdChar) send('SET:' + e.target.value);
+};
+
+$('presets').onclick = e => {
+  if (e.target.tagName !== 'BUTTON') return;
+  [...$('presets').children].forEach(b => b.classList.remove('sel'));
+  e.target.classList.add('sel');
+  minutes = parseInt(e.target.dataset.min, 10);
+  log('Duration set to ' + minutes + ' min');
+};
+</script>
+</body>
+</html>
