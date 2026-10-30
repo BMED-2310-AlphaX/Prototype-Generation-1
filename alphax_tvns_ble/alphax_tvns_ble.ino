@@ -230,7 +230,7 @@ class ServerCallbacks : public BLEServerCallbacks {
 
 class CommandCallbacks : public BLECharacteristicCallbacks {
   void onWrite(BLECharacteristic *c) override {
-#if ESP_ARDUINO_VERSION_MAJOR >= 3
+#if ESP_ARDUINO_VERSION_MAJOR >= 3/
     handleAppCommand(c->getValue());
 #else
     std::string v = c->getValue();
