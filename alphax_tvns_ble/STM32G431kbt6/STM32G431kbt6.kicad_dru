@@ -10,3 +10,14 @@
 (rule "NextPCB via to via"
   (condition "A.Type == 'Via' && B.Type == 'Via'")
   (constraint hole_to_hole (min 0.2mm)))
+
+# U6 (VSSOP, 0.65 mm pitch) has 0.15 mm between a rail pin and its neighbour, so the
+# rail classes cannot demand more than the default clearance.
+(rule "Rails at default clearance"
+  (condition "A.hasNetclass('HV_Pos') || A.hasNetclass('HV_Neg')")
+  (constraint clearance (min 0.15mm)))
+
+# J1 (GCT USB4105 library footprint): locating-peg holes sit 0.194 mm from the GND pads.
+(rule "J1 locating pegs"
+  (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')")
+  (constraint hole_clearance (min 0.19mm)))
