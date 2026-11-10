@@ -1,0 +1,65 @@
+"AlphaX next-gen board (STM32G431KB) - BOM for ONE device, generated from STM32G431kbt6.kicad_sch"
+
+PARTS TO BUY
+Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes
+1,1,U1,MCP73831T-2ACI/OT,"Single cell Li-ion/Li-Po charge controller, 4.20 V",MCP73831T-2ACI/OT,,SOT-23-5,
+2,1,U2,MCP1700T-3002E/TT,"250mA Low Quiescent Current LDO, 3.0V output, SOT-23",MCP1700T-3002E/TT,,SOT-23,
+3,1,U3,TPS65131RGER,"Positive and negative output DC-DC converter, 1.95 A switch, VQFN-24",TPS65131RGER,,VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias,
+4,1,U4,STM32G431KBT6,"STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 32KB RAM, 170 MHz, 1.71-3.6V, 26 GPIO, LQFP32",STM32G431KBT6,,LQFP-32_7x7mm_P0.8mm,Order STM32G431KBT6 (-40 to 85 C)
+5,1,U5,USBLC6-2SC6,"Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",USBLC6-2SC6,,SOT-23-6,
+6,1,U6,OPA2196IDGKR,"Dual 36 V low-power rail-to-rail op amp, VSSOP-8",OPA2196IDGKR,,VSSOP-8_3x3mm_P0.65mm,
+7,1,U7,ANNA-B112-02B,"u-blox Bluetooth LE 5 SiP module (nRF52832), internal antenna",ANNA-B112-02B,,u-blox_ANNA-B112,Ships with u-connectXpress firmware; custom footprint AlphaX:u-blox_ANNA-B112
+8,1,U8,TPS22917DBVR,"1V to 5.5V, 2A, 80mOhm ultra-low leakage load switch, SOT23-6",TPS22917DBVR,,SOT-23-6,
+9,1,U9,TLP175A,"MOSFET photorelay 1-Form-A, Voff 60 V, Ion 100 mA, SOIC-4-6 (MFSOP-4-6)","TLP175A(TPL,E",,Toshiba_SOIC-4-6_4.4x3.6mm_P1.27mm,Toshiba TLP175A (4-pin SO6)
+10,1,Q1,AO3401A,"P-MOSFET transistor, gate/source/drain",AO3401A,,SOT-23,
+11,1,Q2,BSS138,"50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23",BSS138,BSS138CT-ND,SOT-23,
+12,2,D3 D4,MBRM140T3G,Schottky diode,MBRM140T3G,MBRM140T3GOSCT-ND,D_Powermite_LargeCathode,Check pad 1 = cathode (large tab) vs onsemi case 457-04
+13,1,D5,SMF18CA,"Bidirectional TVS, 18 V standoff, 200 W, SOD-123FL",SMF18CA,,D_SOD-123F,"Slkor (Shenzhen Slkormicro) SMF18CA, bidirectional, SOD-123FL; Littelfuse SMF18CA is the equivalent"
+14,1,D6,LTST-C191KGKT,"Green 0603 LED, 571 nm",LTST-C191KGKT,160-1446-1-ND,LED_0603_1608Metric,
+15,2,L1 L2,4.7u,Inductor,TFM252012ALMA4R7MTAA,,L_TDK_TFM252012,Custom footprint AlphaX:L_TDK_TFM252012 (TDK land pattern)
+16,1,Y1,FC-135 32.7680KA-AG0,Two pin crystal,FC-135 32.7680KA-AG0,114-FC-13532.7680KA-AG0CT-ND,Crystal_SMD_3215-2Pin_3.2x1.5mm,
+17,1,F1,MF-NSMF110-2,"Resettable fuse, polymeric positive temperature coefficient",MF-NSMF110-2,,Fuse_1206_3216Metric,
+18,4,R1 R5 R26 R27,10k 1%,Resistor,RNCP0603FTD10K0,,R_0603_1608Metric,
+19,2,R2 R3,5.1k 1%,Resistor,RT0603FRE075K1L,,R_0603_1608Metric,
+20,1,R4,4.7k 1%,Resistor,RT0603FRE074K7L,,R_0603_1608Metric,
+21,5,R6 R7 R17 R18 R30,1M 1%,Resistor,MCT06030C1004FPW00,,R_0603_1608Metric,
+22,7,R8 R9 R10 R25 R28 R29 R33,100k 1%,Resistor,RT0805FRD07100KL,,R_0805_2012Metric,
+23,5,R11 R12 R13 R14 R16,150k 0.05%,Resistor,RG1608N-154-W-T1,RG16N150KWCT-ND,R_0603_1608Metric,Matched bridge resistors (+ Rbleed R16 uses the same part)
+24,2,R15 R21,100 0.1%,Resistor,RG1608P-101-B-T5,RG16P100BCT-ND,R_0603_1608Metric,
+25,2,R19 R20,10M 1%,Resistor,RMCF0402FT10M0,,R_0402_1005Metric,
+26,1,R22,976k 1%,Resistor,CR0603-FX-9763ELF,,R_0603_1608Metric,
+27,1,R23,88.7k 1%,Resistor,CR0603-FX-8872ELF,,R_0603_1608Metric,
+28,1,R24,1.21M 1%,Resistor,RM06F1214CT,,R_0603_1608Metric,
+29,1,R31,0,Resistor,MCT0603MZ0000ZP500,,R_0603_1608Metric,
+30,2,R32 R34,390 1%,Resistor,RT0603FRE07390RL,,R_0603_1608Metric,
+31,6,C1 C2 C6 C9 C18 C31,100n 16V X7R,Unpolarized capacitor,C0603C104M4RACTU,,C_0603_1608Metric,
+32,4,C3 C10 C11 C33,1u 16V X7R,Unpolarized capacitor,EMK107B7105KA-T,,C_0603_1608Metric,
+33,6,C4 C7 C8 C16 C17 C30,4.7u 16V X7R,Unpolarized capacitor,GRM21BR71C475KE51L,,C_0805_2012Metric,
+34,2,C5 C22,10n 50V X7R,Unpolarized capacitor,CL05B103KB5NNNC,,C_0402_1005Metric,
+35,1,C12,2.2u 50V X5R,Unpolarized capacitor,GRT188R61H225KE13D,,C_0603_1608Metric,Cblock (keeps DC off the electrodes)
+36,1,C13,1u 25V X5R,Unpolarized capacitor,C0402B105K025T,,C_0402_1005Metric,
+37,2,C14 C15,100n 50V X7R,Unpolarized capacitor,GCM155R71H104KE02J,,C_0402_1005Metric,
+38,1,C19,220n 10V X5R,Unpolarized capacitor,GRM155R61A224KE19D,,C_0402_1005Metric,
+39,1,C20,6.8p 50V C0G,Unpolarized capacitor,KGM05ACG1H6R8CH,,C_0402_1005Metric,
+40,1,C21,7.5p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN7R5,,C_0402_1005Metric,
+41,1,C23,4.7n 50V C0G,Unpolarized capacitor,GRM1555C1H472JE01D,,C_0402_1005Metric,
+42,6,C24 C25 C26 C27 C34 C35,10u 50V X5R,Unpolarized capacitor,UMK316BBJ106ML-T,,C_1206_3216Metric,
+43,2,C28 C29,9p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN9R0,,C_0402_1005Metric,
+44,1,C32,1n 50V X7R,Unpolarized capacitor,C0402C102K5RACTU,,C_0402_1005Metric,
+45,1,J1,USB4105-GF-A,USB 2.0-only 16P Type-C Receptacle,USB4105-GF-A,,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,
+46,1,J2,BAT (JST PH 2.0),"Generic connector, single row, 01x02",S2B-PH-SM4-TB(LF)(SN),,JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,
+47,1,J3,SWD,"Generic connector, single row, 01x06",PHED-SS006G1ABONE-B300,,PinHeader_2x03_P2.54mm_Vertical_SMD,2x3 2.54 mm SMD; SWD to Nucleo ST-LINK CN4
+48,3,SW1 SW2 SW3,WAKE / BOOT / RESET,"Push button switch, generic, two pins",PTS810 SJM 250 SMTR LFS,,SW_SPST_PTS810,
+49,3,TP20 TP21 TP22,5015,test point,5015,,TestPoint_Keystone_5015_Micro_Mini,
+
+OFF-BOARD ITEMS (not in the schematic)
+Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes
+50,1,BT1,500 mAh LiPo,Protected Li-polymer cell with JST PH lead (plugs into J2),Adafruit 1578,,,Check lead polarity against J2 pin 1 before plugging in
+51,2,,Electrode + lead,"Custom-fabricated electrodes, soldered to J4 pads",,,,Up to 0.25 mm2 / 24 AWG lead
+
+PCB COPPER ONLY (nothing to buy)
+Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes
+-1,1,J4,ELECTRODES,Solder pads with strain relief for the electrode leads,,,SolderWire-0.25sqmm_1x02_P4.2mm_D0.65mm_OD1.7mm_Relief,
+-2,8,TP1 TP2 TP3 TP4 TP5 TP6 TP7 TP8,TP,test point,,,TestPoint_Pad_1.0x1.0mm,
+-3,11,TP9 TP10 TP11 TP12 TP13 TP14 TP15 TP16 TP17 TP18 TP19,TP,test point,,,TestPoint_Pad_D1.5mm,
+-4,1,NT1,NetTie_2,"Net tie, 2 pins",,,NetTie-2_SMD_Pad0.5mm,

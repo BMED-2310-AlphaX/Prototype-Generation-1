@@ -1,0 +1,53 @@
+Suggested order for 4 devices (from BOM_STM32G431kbt6.csv)
+Per device,Needed for 4,Suggested order,References,Value,MPN,DigiKey PN,Why the extra
+1,4,5,U1,MCP73831T-2ACI/OT,MCP73831T-2ACI/OT,,Charger
+1,4,5,U2,MCP1700T-3002E/TT,MCP1700T-3002E/TT,,LDO
+1,4,6,U3,TPS65131RGER,TPS65131RGER,,QFN with thermal pad: hardest part to reflow and rework
+1,4,5,U4,STM32G431KBT6,STM32G431KBT6,,Can be bricked by option bytes or damaged by ESD while debugging
+1,4,5,U5,USBLC6-2SC6,USBLC6-2SC6,,USB ESD
+1,4,6,U6,OPA2196IDGKR,OPA2196IDGKR,,Stimulator op amp: exposed to electrode faults and bench mistakes
+1,4,5,U7,ANNA-B112-02B,ANNA-B112-02B,,"LGA module: can't be hand-reworked, so a bad joint means a replacement; also expensive"
+1,4,5,U8,TPS22917DBVR,TPS22917DBVR,,Load switch
+1,4,6,U9,TLP175A,"TLP175A(TPL,E",,Output switch: sits directly on the electrode line
+1,4,10,Q1,AO3401A,AO3401A,,cheap discrete; rounded up to 10
+1,4,10,Q2,BSS138,BSS138,BSS138CT-ND,cheap discrete; rounded up to 10
+2,8,10,D3 D4,MBRM140T3G,MBRM140T3G,MBRM140T3GOSCT-ND,cheap discrete; rounded up to 10
+1,4,10,D5,SMF18CA,SMF18CA,,cheap discrete; rounded up to 10
+1,4,10,D6,LTST-C191KGKT,LTST-C191KGKT,160-1446-1-ND,cheap discrete; rounded up to 10
+2,8,10,L1 L2,4.7u,TFM252012ALMA4R7MTAA,,power inductor; 2 spare
+1,4,6,Y1,FC-135 32.7680KA-AG0,FC-135 32.7680KA-AG0,114-FC-13532.7680KA-AG0CT-ND,"crystal: fragile, easy to crack when reworking"
+1,4,10,F1,MF-NSMF110-2,MF-NSMF110-2,,cheap discrete; rounded up to 10
+4,16,25,R1 R5 R26 R27,10k 1%,RNCP0603FTD10K0,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+2,8,25,R2 R3,5.1k 1%,RT0603FRE075K1L,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,R4,4.7k 1%,RT0603FRE074K7L,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+5,20,50,R6 R7 R17 R18 R30,1M 1%,MCT06030C1004FPW00,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+7,28,50,R8 R9 R10 R25 R28 R29 R33,100k 1%,RT0805FRD07100KL,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+5,20,25,R11 R12 R13 R14 R16,150k 0.05%,RG1608N-154-W-T1,RG16N150KWCT-ND,"precision resistor: +25%, small parts get lost"
+2,8,25,R15 R21,100 0.1%,RG1608P-101-B-T5,RG16P100BCT-ND,"precision resistor: +25%, small parts get lost"
+2,8,25,R19 R20,10M 1%,RMCF0402FT10M0,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,R22,976k 1%,CR0603-FX-9763ELF,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,R23,88.7k 1%,CR0603-FX-8872ELF,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,R24,1.21M 1%,RM06F1214CT,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,R31,0,MCT0603MZ0000ZP500,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+2,8,25,R32 R34,390 1%,RT0603FRE07390RL,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+6,24,50,C1 C2 C6 C9 C18 C31,100n 16V X7R,C0603C104M4RACTU,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+4,16,25,C3 C10 C11 C33,1u 16V X7R,EMK107B7105KA-T,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+6,24,50,C4 C7 C8 C16 C17 C30,4.7u 16V X7R,GRM21BR71C475KE51L,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+2,8,25,C5 C22,10n 50V X7R,CL05B103KB5NNNC,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C12,2.2u 50V X5R,GRT188R61H225KE13D,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C13,1u 25V X5R,C0402B105K025T,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+2,8,25,C14 C15,100n 50V X7R,GCM155R71H104KE02J,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C19,220n 10V X5R,GRM155R61A224KE19D,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C20,6.8p 50V C0G,KGM05ACG1H6R8CH,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C21,7.5p 50V C0G,CC0402CRNPO9BN7R5,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C23,4.7n 50V C0G,GRM1555C1H472JE01D,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+6,24,50,C24 C25 C26 C27 C34 C35,10u 50V X5R,UMK316BBJ106ML-T,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+2,8,25,C28 C29,9p 50V C0G,CC0402CRNPO9BN9R0,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,10,C32,1n 50V X7R,C0402C102K5RACTU,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
+1,4,6,J1,USB4105-GF-A,USB4105-GF-A,,"connector: takes mechanical stress, may need replacing"
+1,4,6,J2,BAT (JST PH 2.0),S2B-PH-SM4-TB(LF)(SN),,"connector: takes mechanical stress, may need replacing"
+1,4,6,J3,SWD,PHED-SS006G1ABONE-B300,,"connector: takes mechanical stress, may need replacing"
+3,12,15,SW1 SW2 SW3,WAKE / BOOT / RESET,PTS810 SJM 250 SMTR LFS,,button: mechanical wear
+3,12,15,TP20 TP21 TP22,5015,5015,,spares
+
+,4,5,BT1,500 mAh LiPo,Adafruit 1578,,one spare cell
