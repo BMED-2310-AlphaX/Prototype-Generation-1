@@ -22,8 +22,9 @@ Per device,Needed for 4,Suggested order,References,Value,MPN,DigiKey PN,Why the 
 1,4,10,R4,4.7k 1%,RT0603FRE074K7L,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
 5,20,50,R6 R7 R17 R18 R30,1M 1%,MCT06030C1004FPW00,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
 7,28,50,R8 R9 R10 R25 R28 R29 R33,100k 1%,RT0805FRD07100KL,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
-5,20,25,R11 R12 R13 R14 R16,150k 0.05%,RG1608N-154-W-T1,RG16N150KWCT-ND,"precision resistor: +25%, small parts get lost"
+4,16,25,R11 R12 R13 R14,150k 0.05%,RG1608N-154-W-T1,RG16N150KWCT-ND,"precision resistor: +25%, small parts get lost"
 2,8,25,R15 R21,100 0.1%,RG1608P-101-B-T5,RG16P100BCT-ND,"precision resistor: +25%, small parts get lost"
+1,4,10,R16,150k 1%,ERJ-3EKF1503V,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
 2,8,25,R19 R20,10M 1%,RMCF0402FT10M0,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
 1,4,10,R22,976k 1%,CR0603-FX-9763ELF,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break
 1,4,10,R23,88.7k 1%,CR0603-FX-8872ELF,,0402/0603 passive: get lost or tombstone; rounded up to the cut-tape price break

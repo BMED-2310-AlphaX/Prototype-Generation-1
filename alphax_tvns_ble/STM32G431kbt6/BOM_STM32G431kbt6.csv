@@ -24,38 +24,39 @@ Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes
 20,1,R4,4.7k 1%,Resistor,RT0603FRE074K7L,,R_0603_1608Metric,
 21,5,R6 R7 R17 R18 R30,1M 1%,Resistor,MCT06030C1004FPW00,,R_0603_1608Metric,
 22,7,R8 R9 R10 R25 R28 R29 R33,100k 1%,Resistor,RT0805FRD07100KL,,R_0805_2012Metric,
-23,5,R11 R12 R13 R14 R16,150k 0.05%,Resistor,RG1608N-154-W-T1,RG16N150KWCT-ND,R_0603_1608Metric,Matched bridge resistors (+ Rbleed R16 uses the same part)
+23,4,R11 R12 R13 R14,150k 0.05%,Resistor,RG1608N-154-W-T1,RG16N150KWCT-ND,R_0603_1608Metric,Matched Howland bridge resistors (0.05%)
 24,2,R15 R21,100 0.1%,Resistor,RG1608P-101-B-T5,RG16P100BCT-ND,R_0603_1608Metric,
-25,2,R19 R20,10M 1%,Resistor,RMCF0402FT10M0,,R_0402_1005Metric,
-26,1,R22,976k 1%,Resistor,CR0603-FX-9763ELF,,R_0603_1608Metric,
-27,1,R23,88.7k 1%,Resistor,CR0603-FX-8872ELF,,R_0603_1608Metric,
-28,1,R24,1.21M 1%,Resistor,RM06F1214CT,,R_0603_1608Metric,
-29,1,R31,0,Resistor,MCT0603MZ0000ZP500,,R_0603_1608Metric,
-30,2,R32 R34,390 1%,Resistor,RT0603FRE07390RL,,R_0603_1608Metric,
-31,6,C1 C2 C6 C9 C18 C31,100n 16V X7R,Unpolarized capacitor,C0603C104M4RACTU,,C_0603_1608Metric,
-32,4,C3 C10 C11 C33,1u 16V X7R,Unpolarized capacitor,EMK107B7105KA-T,,C_0603_1608Metric,
-33,6,C4 C7 C8 C16 C17 C30,4.7u 16V X7R,Unpolarized capacitor,GRM21BR71C475KE51L,,C_0805_2012Metric,
-34,2,C5 C22,10n 50V X7R,Unpolarized capacitor,CL05B103KB5NNNC,,C_0402_1005Metric,
-35,1,C12,2.2u 50V X5R,Unpolarized capacitor,GRT188R61H225KE13D,,C_0603_1608Metric,Cblock (keeps DC off the electrodes)
-36,1,C13,1u 25V X5R,Unpolarized capacitor,C0402B105K025T,,C_0402_1005Metric,
-37,2,C14 C15,100n 50V X7R,Unpolarized capacitor,GCM155R71H104KE02J,,C_0402_1005Metric,
-38,1,C19,220n 10V X5R,Unpolarized capacitor,GRM155R61A224KE19D,,C_0402_1005Metric,
-39,1,C20,6.8p 50V C0G,Unpolarized capacitor,KGM05ACG1H6R8CH,,C_0402_1005Metric,
-40,1,C21,7.5p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN7R5,,C_0402_1005Metric,
-41,1,C23,4.7n 50V C0G,Unpolarized capacitor,GRM1555C1H472JE01D,,C_0402_1005Metric,
-42,6,C24 C25 C26 C27 C34 C35,10u 50V X5R,Unpolarized capacitor,UMK316BBJ106ML-T,,C_1206_3216Metric,
-43,2,C28 C29,9p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN9R0,,C_0402_1005Metric,
-44,1,C32,1n 50V X7R,Unpolarized capacitor,C0402C102K5RACTU,,C_0402_1005Metric,
-45,1,J1,USB4105-GF-A,USB 2.0-only 16P Type-C Receptacle,USB4105-GF-A,,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,
-46,1,J2,BAT (JST PH 2.0),"Generic connector, single row, 01x02",S2B-PH-SM4-TB(LF)(SN),,JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,
-47,1,J3,SWD,"Generic connector, single row, 01x06",PHED-SS006G1ABONE-B300,,PinHeader_2x03_P2.54mm_Vertical_SMD,2x3 2.54 mm SMD; SWD to Nucleo ST-LINK CN4
-48,3,SW1 SW2 SW3,WAKE / BOOT / RESET,"Push button switch, generic, two pins",PTS810 SJM 250 SMTR LFS,,SW_SPST_PTS810,
-49,3,TP20 TP21 TP22,5015,test point,5015,,TestPoint_Keystone_5015_Micro_Mini,
+25,1,R16,150k 1%,Resistor,ERJ-3EKF1503V,,R_0603_1608Metric,Rbleed; ordinary 1% is enough
+26,2,R19 R20,10M 1%,Resistor,RMCF0402FT10M0,,R_0402_1005Metric,
+27,1,R22,976k 1%,Resistor,CR0603-FX-9763ELF,,R_0603_1608Metric,
+28,1,R23,88.7k 1%,Resistor,CR0603-FX-8872ELF,,R_0603_1608Metric,
+29,1,R24,1.21M 1%,Resistor,RM06F1214CT,,R_0603_1608Metric,
+30,1,R31,0,Resistor,MCT0603MZ0000ZP500,,R_0603_1608Metric,
+31,2,R32 R34,390 1%,Resistor,RT0603FRE07390RL,,R_0603_1608Metric,
+32,6,C1 C2 C6 C9 C18 C31,100n 16V X7R,Unpolarized capacitor,C0603C104M4RACTU,,C_0603_1608Metric,
+33,4,C3 C10 C11 C33,1u 16V X7R,Unpolarized capacitor,EMK107B7105KA-T,,C_0603_1608Metric,
+34,6,C4 C7 C8 C16 C17 C30,4.7u 16V X7R,Unpolarized capacitor,GRM21BR71C475KE51L,,C_0805_2012Metric,
+35,2,C5 C22,10n 50V X7R,Unpolarized capacitor,CL05B103KB5NNNC,,C_0402_1005Metric,
+36,1,C12,2.2u 50V X5R,Unpolarized capacitor,GRT188R61H225KE13D,,C_0603_1608Metric,Cblock (keeps DC off the electrodes)
+37,1,C13,1u 25V X5R,Unpolarized capacitor,C0402B105K025T,,C_0402_1005Metric,
+38,2,C14 C15,100n 50V X7R,Unpolarized capacitor,GCM155R71H104KE02J,,C_0402_1005Metric,
+39,1,C19,220n 10V X5R,Unpolarized capacitor,GRM155R61A224KE19D,,C_0402_1005Metric,
+40,1,C20,6.8p 50V C0G,Unpolarized capacitor,KGM05ACG1H6R8CH,,C_0402_1005Metric,
+41,1,C21,7.5p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN7R5,,C_0402_1005Metric,
+42,1,C23,4.7n 50V C0G,Unpolarized capacitor,GRM1555C1H472JE01D,,C_0402_1005Metric,
+43,6,C24 C25 C26 C27 C34 C35,10u 50V X5R,Unpolarized capacitor,UMK316BBJ106ML-T,,C_1206_3216Metric,
+44,2,C28 C29,9p 50V C0G,Unpolarized capacitor,CC0402CRNPO9BN9R0,,C_0402_1005Metric,
+45,1,C32,1n 50V X7R,Unpolarized capacitor,C0402C102K5RACTU,,C_0402_1005Metric,
+46,1,J1,USB4105-GF-A,USB 2.0-only 16P Type-C Receptacle,USB4105-GF-A,,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,
+47,1,J2,BAT (JST PH 2.0),"Generic connector, single row, 01x02",S2B-PH-SM4-TB(LF)(SN),,JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,
+48,1,J3,SWD,"Generic connector, single row, 01x06",PHED-SS006G1ABONE-B300,,PinHeader_2x03_P2.54mm_Vertical_SMD,2x3 2.54 mm SMD; SWD to Nucleo ST-LINK CN4
+49,3,SW1 SW2 SW3,WAKE / BOOT / RESET,"Push button switch, generic, two pins",PTS810 SJM 250 SMTR LFS,,SW_SPST_PTS810,
+50,3,TP20 TP21 TP22,5015,test point,5015,,TestPoint_Keystone_5015_Micro_Mini,
 
 OFF-BOARD ITEMS (not in the schematic)
 Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes
-50,1,BT1,500 mAh LiPo,Protected Li-polymer cell with JST PH lead (plugs into J2),Adafruit 1578,,,Check lead polarity against J2 pin 1 before plugging in
-51,2,,Electrode + lead,"Custom-fabricated electrodes, soldered to J4 pads",,,,Up to 0.25 mm2 / 24 AWG lead
+51,1,BT1,500 mAh LiPo,Protected Li-polymer cell with JST PH lead (plugs into J2),Adafruit 1578,,,Check lead polarity against J2 pin 1 before plugging in
+52,2,,Electrode + lead,"Custom-fabricated electrodes, soldered to J4 pads",,,,Up to 0.25 mm2 / 24 AWG lead
 
 PCB COPPER ONLY (nothing to buy)
 Item,Qty,References,Value,Description,MPN,DigiKey PN,Footprint,Notes

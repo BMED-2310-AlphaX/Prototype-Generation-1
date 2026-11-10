@@ -141,6 +141,6 @@ Mismatches. All four were resolved by 2026-11-09; the original notes are kept be
    - **Unchanged:** delivered charge, balance and stability match the NE5532 in simulation.
 
    The bench `.asc` still models the NE5532 bench build. Original note: The .asc labels the Howland and servo as NE5532 halves (modeled as UniversalOpAmp2, Rail=1). The power budget (36 mW nominal / 53 mW worst case, ≥50 sessions on 500 mAh) assumed an LT1637 at about 0.23 to 0.37 mA. As far as I know the NE5532 draws about 8 mA typical (16 mA max) for both halves. At ±14.5 V that is roughly 230 mW from the rails, which would cut the 500 mAh cell to roughly a dozen 20-minute sessions instead of 50+. The NE5532 also has no SHDN pin (the §1 SHDN note applies only to the LT1637). Its ±22 V maximum supply is fine at ±14.5 V.
-2. **Rbleed. Resolved:** 150 kΩ (same 0.05% part as the bridge resistors). Original note: the .asc has 100 kΩ; the power page and bench build use 150 kΩ.
+2. **Rbleed. Resolved:** 150 kΩ 1% (Panasonic ERJ-3EKF1503V; Rbleed needs no precision). Original note: the .asc has 100 kΩ; the power page and bench build use 150 kΩ.
 3. **Howland resistors. Resolved:** 4 × 150 kΩ 0.05%. R12 is 150 kΩ, not the ideal 150.1 kΩ, which puts the bridge slightly low, the safe side. Original note: the .asc uses Rset = 150 kΩ with R2 = Rset + Rsense; the final-PCB parts list uses 100 kΩ 0.05%.
 4. **Rails. Resolved:** ±14.56 / −14.68 V from the TPS65131. Original note: the .asc steps ±9 V and ±18 V, and the ±18 V step is not reachable with this converter.

@@ -18165,7 +18165,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "150k 0.05%"
+		(property "Value" "150k 1%"
 			(at 350.52 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18209,18 +18209,7 @@
 				)
 			)
 		)
-		(property "MPN" "RG1608N-154-W-T1"
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey" "RG16N150KWCT-ND"
+		(property "MPN" "ERJ-3EKF1503V"
 			(at 347.98 88.9 0)
 			(hide yes)
 			(show_name no)
