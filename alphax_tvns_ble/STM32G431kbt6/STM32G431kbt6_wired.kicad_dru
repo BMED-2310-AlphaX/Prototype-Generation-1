@@ -1,0 +1,12 @@
+(version 1)
+# NextPCB Standard PCB, 1 oz outer copper. Source: nextpcb.com/pcb-capabilities
+
+# NextPCB: via to track >= 7 mil (0.18 mm).
+(rule "NextPCB via to track"
+  (condition "A.Type == 'Via' && B.Type == 'Track' && A.Net != B.Net")
+  (constraint clearance (min 0.18mm)))
+
+# NextPCB: via to via, same net >= 8 mil; holes of different nets >= 12 mil (board setup).
+(rule "NextPCB via to via"
+  (condition "A.Type == 'Via' && B.Type == 'Via'")
+  (constraint hole_to_hole (min 0.2mm)))
