@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 6,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -53,7 +53,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "00000000_00000000_00000000_80000005",
+    "visible_layers": "ffffffff_ffffffff_ffffd575_f5555515",
     "zone_display_mode": 0
   },
   "git": {
@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "parts_from_3x4_layout.kicad_prl",
+    "filename": "STM32G431kbt6_2x5.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
