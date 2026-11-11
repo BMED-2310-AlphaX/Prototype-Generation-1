@@ -679,7 +679,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/2x5 cm compact/",
       "specctra_dsn": "",
       "step": "STM32G431kbt6_2x5_compact.step",
       "vrml": ""
