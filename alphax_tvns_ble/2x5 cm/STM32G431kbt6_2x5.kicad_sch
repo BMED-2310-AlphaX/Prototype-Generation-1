@@ -9261,6 +9261,18 @@
 		(uuid "ddc7eb55-de38-455d-8037-8881c7f573eb")
 	)
 	(no_connect
+		(at 66.04 337.82)
+		(uuid "4ac09da8-6a51-4123-aaaa-38e387bccaaf")
+	)
+	(no_connect
+		(at 66.04 365.76)
+		(uuid "8f2d7f35-7266-47a5-9b6b-e8bd1fe5d492")
+	)
+	(no_connect
+		(at 66.04 363.22)
+		(uuid "18ba8852-5e91-4f8e-9c03-4ed4aa7bab05")
+	)
+	(no_connect
 		(at 106.68 368.3)
 		(uuid "1655c8ba-30ac-4f9a-9597-c1c903bf8bd9")
 	)
@@ -9414,16 +9426,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 325.12) (xy 264.16 327.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05cf172c-1b4b-4e27-b11a-1efcb9e68e47")
-	)
-	(wire
-		(pts
 			(xy 454.66 285.75) (xy 454.66 288.29)
 		)
 		(stroke
@@ -9491,16 +9493,6 @@
 			(type default)
 		)
 		(uuid "0da3ab55-ab00-48f7-b359-beed5a9756cc")
-	)
-	(wire
-		(pts
-			(xy 447.04 330.2) (xy 447.04 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e288091-7d53-4fed-a38e-ca34992842d5")
 	)
 	(wire
 		(pts
@@ -10084,16 +10076,6 @@
 	)
 	(wire
 		(pts
-			(xy 487.68 330.2) (xy 487.68 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3da78c67-2c61-4adc-ab4f-a44265021f4d")
-	)
-	(wire
-		(pts
 			(xy 35.56 251.46) (xy 33.02 251.46)
 		)
 		(stroke
@@ -10171,16 +10153,6 @@
 			(type default)
 		)
 		(uuid "423b484c-66ac-481f-9356-006f55abd8ab")
-	)
-	(wire
-		(pts
-			(xy 447.04 353.06) (xy 447.04 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4255bc63-dc11-406f-8b76-5fea3b69fa16")
 	)
 	(wire
 		(pts
@@ -10354,16 +10326,6 @@
 	)
 	(wire
 		(pts
-			(xy 467.36 353.06) (xy 467.36 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4edf9603-a4ff-46b5-936f-7f8613148c4b")
-	)
-	(wire
-		(pts
 			(xy 33.02 251.46) (xy 33.02 254)
 		)
 		(stroke
@@ -10381,16 +10343,6 @@
 			(type default)
 		)
 		(uuid "4f292d5e-688e-4355-a491-4545ebca5160")
-	)
-	(wire
-		(pts
-			(xy 467.36 330.2) (xy 467.36 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fc31874-4033-4610-8e0b-038a76d97e6f")
 	)
 	(wire
 		(pts
@@ -10934,16 +10886,6 @@
 	)
 	(wire
 		(pts
-			(xy 436.88 330.2) (xy 436.88 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aef02c4-cd18-415a-9358-cd33dda81e12")
-	)
-	(wire
-		(pts
 			(xy 347.98 85.09) (xy 347.98 82.55)
 		)
 		(stroke
@@ -11054,26 +10996,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 325.12) (xy 276.86 327.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8087049a-2039-41d3-a0d8-526fffd72785")
-	)
-	(wire
-		(pts
-			(xy 497.84 353.06) (xy 497.84 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80a4065f-59bd-4cd3-97ad-d91b99a69990")
-	)
-	(wire
-		(pts
 			(xy 106.68 200.66) (xy 106.68 198.12)
 		)
 		(stroke
@@ -11154,16 +11076,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 259.08) (xy 213.36 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8955a55e-0bcb-4a80-8100-9ae174b81362")
-	)
-	(wire
-		(pts
 			(xy 388.62 125.73) (xy 388.62 123.19)
 		)
 		(stroke
@@ -11211,16 +11123,6 @@
 			(type default)
 		)
 		(uuid "8bf533a2-ebdd-4f79-83d7-a70f4173e97e")
-	)
-	(wire
-		(pts
-			(xy 213.36 259.08) (xy 213.36 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d454431-6092-47fe-886b-ac7a3a5ba420")
 	)
 	(wire
 		(pts
@@ -11461,16 +11363,6 @@
 			(type default)
 		)
 		(uuid "9ca293b7-b898-4f2b-80a6-2f16aa585aa8")
-	)
-	(wire
-		(pts
-			(xy 477.52 330.2) (xy 477.52 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cbab806-721f-4fcc-a864-644e0bb4d8cb")
 	)
 	(wire
 		(pts
@@ -11904,16 +11796,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 365.76) (xy 63.5 365.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5813745-5a9e-422e-9e3a-18ff6bf6a72e")
-	)
-	(wire
-		(pts
 			(xy 556.26 278.13) (xy 556.26 275.59)
 		)
 		(stroke
@@ -12274,16 +12156,6 @@
 	)
 	(wire
 		(pts
-			(xy 487.68 353.06) (xy 487.68 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e37b563b-8957-42d5-9ac1-378b52657d9a")
-	)
-	(wire
-		(pts
 			(xy 515.62 274.32) (xy 515.62 276.86)
 		)
 		(stroke
@@ -12394,16 +12266,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 363.22) (xy 63.5 363.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee009961-3fd5-438c-822b-70424e169425")
-	)
-	(wire
-		(pts
 			(xy 492.76 245.11) (xy 492.76 247.65)
 		)
 		(stroke
@@ -12504,16 +12366,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 259.08) (xy 228.6 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f51a6b53-a4f8-4ea0-9d37-f30dd95c90d1")
-	)
-	(wire
-		(pts
 			(xy 106.68 337.82) (xy 109.22 337.82)
 		)
 		(stroke
@@ -12594,26 +12446,6 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 325.12) (xy 289.56 327.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb0ae7c4-0fac-41d7-9b04-f70528f361d3")
-	)
-	(wire
-		(pts
-			(xy 457.2 330.2) (xy 457.2 332.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc6d4030-dd66-4943-b28e-ae407fb0dbcc")
-	)
-	(wire
-		(pts
 			(xy 492.76 60.96) (xy 495.3 60.96)
 		)
 		(stroke
@@ -12661,16 +12493,6 @@
 			(type default)
 		)
 		(uuid "fe1518c7-bc70-4e84-b081-2eb82b7fb20c")
-	)
-	(wire
-		(pts
-			(xy 66.04 337.82) (xy 63.5 337.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe601f05-dce1-4080-ab3b-237829575484")
 	)
 	(wire
 		(pts
@@ -12741,16 +12563,6 @@
 			(justify left bottom)
 		)
 		(uuid "06b68333-2d32-4f69-a5b2-cac2bff788b9")
-	)
-	(label "DRV"
-		(at 447.04 355.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0882370f-f0a4-4f14-bc4f-312a3b36088d")
 	)
 	(label "VBAT"
 		(at 441.96 139.7 270)
@@ -12882,16 +12694,6 @@
 		)
 		(uuid "1c67a803-cbbb-4497-892f-343ef40adebe")
 	)
-	(label "BLE_SWDCLK"
-		(at 63.5 365.76 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1cda6925-c367-46c7-ade8-11bafb7fe7aa")
-	)
 	(label "FBN"
 		(at 492.76 234.95 90)
 		(effects
@@ -12972,16 +12774,6 @@
 		)
 		(uuid "236b4efa-d9d6-4b21-99b2-54f98c32d30e")
 	)
-	(label "BLE_RTS"
-		(at 63.5 337.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "248c7d9c-e902-439a-9678-b693b36dc1b9")
-	)
 	(label "BLE_SW1"
 		(at 63.5 350.52 180)
 		(effects
@@ -13001,16 +12793,6 @@
 			(justify right bottom)
 		)
 		(uuid "25d444ac-763e-4889-a55a-8effbb2d4b6f")
-	)
-	(label "BLE_RTS"
-		(at 264.16 327.66 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "270d17e2-347a-4c84-ad04-ce2f1b364edd")
 	)
 	(label "VBUS_SENSE"
 		(at 132.08 254 270)
@@ -13141,16 +12923,6 @@
 			(justify left bottom)
 		)
 		(uuid "363238bb-7768-4762-955c-d3c5a4b3d6a3")
-	)
-	(label "BLE_SWDIO"
-		(at 276.86 327.66 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3726ab1f-6181-43d9-b5ac-de7259899fb7")
 	)
 	(label "ELEC_BLK"
 		(at 388.62 203.2 0)
@@ -13302,16 +13074,6 @@
 		)
 		(uuid "4575c6d1-7d7b-4f2a-ab0c-0ec97ab6e52f")
 	)
-	(label "BLE_SWDCLK"
-		(at 289.56 327.66 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4687f6eb-26ac-4bfe-abd2-be1437ec68ab")
-	)
 	(label "ELEC_BLK"
 		(at 363.22 95.25 270)
 		(effects
@@ -13411,16 +13173,6 @@
 			(justify right bottom)
 		)
 		(uuid "54614c8c-4e50-492d-8e48-817335566cff")
-	)
-	(label "BLE_VCC"
-		(at 467.36 332.74 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "55f61ed0-2a06-4d56-82a6-1d1d8895afae")
 	)
 	(label "VPOS"
 		(at 370.84 123.19 90)
@@ -13652,16 +13404,6 @@
 		)
 		(uuid "74ea2b55-e186-4e64-be3a-a665759245fe")
 	)
-	(label "ELEC_STIM"
-		(at 467.36 355.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "757d098c-6189-4b24-9e38-7bf9587098c8")
-	)
 	(label "BAT_P"
 		(at 33.02 248.92 180)
 		(effects
@@ -13831,16 +13573,6 @@
 			(justify left bottom)
 		)
 		(uuid "8e5e0c14-814e-4865-ad44-e8222928d3a4")
-	)
-	(label "NRST"
-		(at 228.6 259.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8ecba528-4465-42a0-84c8-8bf5baa02f9b")
 	)
 	(label "VNEG"
 		(at 505.46 247.65 270)
@@ -14252,16 +13984,6 @@
 		)
 		(uuid "c44839b9-d97b-444f-a7b0-8bdd1d5e3a21")
 	)
-	(label "BLE_SWDIO"
-		(at 63.5 363.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c4b47114-3230-48ac-b122-80a836a62187")
-	)
 	(label "BLE_XL1"
 		(at 140.97 327.66 180)
 		(effects
@@ -14371,16 +14093,6 @@
 			(justify left bottom)
 		)
 		(uuid "cf2d6a8e-996e-4a0e-9a2a-4c0684585aa5")
-	)
-	(label "VNEG"
-		(at 487.68 332.74 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d0686c78-370d-4cb1-a574-6a2eec115325")
 	)
 	(label "USB_DP"
 		(at 58.42 187.96 0)
@@ -14582,16 +14294,6 @@
 		)
 		(uuid "e6083ed3-67b8-40f6-9743-dd962f13669a")
 	)
-	(label "VBAT"
-		(at 447.04 332.74 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e8677100-b87a-4087-9671-1183819886d7")
-	)
 	(label "Q2_G"
 		(at 566.42 143.51 90)
 		(effects
@@ -14721,16 +14423,6 @@
 			(justify left bottom)
 		)
 		(uuid "f2c82e20-024f-49fe-b3d0-c05fd3be9d78")
-	)
-	(label "VPOS"
-		(at 477.52 332.74 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f3a572c6-3792-435e-8cec-8aae42a805ca")
 	)
 	(label "VBUS_SENSE"
 		(at 124.46 100.33 180)
@@ -15186,84 +14878,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 487.68 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "05a33f0d-9df1-4a02-8b2c-4200e24c97c4")
-		(property "Reference" "TP14"
-			(at 488.95 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 488.95 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 487.68 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 487.68 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 487.68 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2f4b436a-0f72-4fa0-8231-e9750aa090d5")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -15869,84 +15483,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 467.36 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b3a467f-48c4-4a5f-a315-02bc6442e1ea")
-		(property "Reference" "TP12"
-			(at 468.63 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 468.63 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 467.36 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 467.36 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a5fed211-078b-45a2-95a6-422485739991")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Battery_Management:MCP73831-2-OT")
 		(at 147.32 172.72 0)
 		(unit 1)
@@ -16336,161 +15872,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 289.56 325.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "110890c9-cdcb-4e76-861e-6b7dc1634d5b")
-		(property "Reference" "TP8"
-			(at 290.83 320.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 290.83 322.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 289.56 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 289.56 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 289.56 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f387ec5-15e5-4043-b118-0b5f6b48d75e")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V0")
-		(at 457.2 332.74 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1217dd86-fab1-44ec-a4c6-cb35f2ce757a")
-		(property "Reference" "#PWR83"
-			(at 457.2 336.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V0"
-			(at 457.2 337.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 457.2 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 457.2 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V0\""
-			(at 457.2 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "42099bda-0db9-4d67-b779-ba8d12752ff0")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "#PWR83")
 					(unit 1)
 				)
 			)
@@ -17537,84 +16918,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 436.88 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2545bed0-31f3-44dc-b76f-a31f61954d8d")
-		(property "Reference" "TP9"
-			(at 438.15 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 438.15 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 436.88 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 436.88 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 436.88 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "20d9ad34-9d5b-4dc9-847e-0aeaa49da20e")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 106.68 175.26 0)
 		(unit 1)
@@ -18460,84 +17763,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 447.04 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3013bb31-e27b-4c28-8263-160b22e63d0a")
-		(property "Reference" "TP10"
-			(at 448.31 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 448.31 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 447.04 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 447.04 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 447.04 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c7161282-4435-4d65-81d8-6fe67612a27c")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -20158,84 +19383,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 457.2 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "43a73759-07dd-4c75-8705-0c94c087d16c")
-		(property "Reference" "TP11"
-			(at 458.47 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 458.47 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 457.2 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 457.2 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 457.2 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "67111733-27ee-4930-b1cf-441fa958d48d")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 128.27 62.23 0)
 		(unit 1)
@@ -20415,96 +19562,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 220.98 259.08 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "49f2250d-a8d2-4ecb-aa0d-7ba908d8715c")
-		(property "Reference" "SW3"
-			(at 220.98 254 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RESET"
-			(at 220.98 262.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
-			(at 220.98 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 220.98 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PTS810 SJM 250 SMTR LFS"
-			(at 220.98 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3da7d12-6aa5-411b-beea-40693885a0e1")
-		)
-		(pin "2"
-			(uuid "1960ff3c-2c3c-436d-8b47-f03a581031bd")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -24067,84 +23124,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 467.36 353.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7fb09fdb-e079-442c-8fff-3f7eab489e29")
-		(property "Reference" "TP19"
-			(at 468.63 349.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 468.63 351.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 467.36 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 467.36 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9c49d72a-6d81-4106-9592-102e982ec00f")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 76.2 247.65 0)
 		(unit 1)
@@ -24229,95 +23208,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 487.68 353.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "82bc78bc-6bd6-45c4-8aac-fb4962eff580")
-		(property "Reference" "TP21"
-			(at 488.95 349.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5015"
-			(at 488.95 351.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
-			(at 487.68 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 487.68 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 487.68 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "5015"
-			(at 487.68 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0e63c83-b5f8-46a1-9e28-97c0d6a74e4e")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -26657,84 +25547,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 264.16 325.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a70b2eaf-cc37-4044-a49e-1fd36f3defd5")
-		(property "Reference" "TP6"
-			(at 265.43 320.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 265.43 322.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 264.16 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 264.16 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bf7f41dd-a1ff-4fd9-a5b9-e151f8b20583")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -29841,83 +28653,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 213.36 261.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d574f5f4-04c6-4605-a8fe-76ec726a4a77")
-		(property "Reference" "#PWR41"
-			(at 213.36 265.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 266.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 213.36 261.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1b4b8f1-c19a-41aa-9a5f-9136c44df658")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "#PWR41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 462.28 198.12 0)
 		(unit 1)
@@ -30403,161 +29138,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 276.86 325.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d85c3a50-dbff-4aca-8b4c-8aec8d63883b")
-		(property "Reference" "TP7"
-			(at 278.13 320.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 278.13 322.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 276.86 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 276.86 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bd351a8d-4f97-45a8-a07b-c4247b7e71e5")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 436.88 332.74 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d9b20451-9423-4697-8106-529ecd0fb5db")
-		(property "Reference" "#PWR82"
-			(at 436.88 336.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 436.88 337.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 436.88 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 436.88 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 436.88 332.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "55ebcf1f-f15c-4989-8f3e-0e343efe9f03")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "#PWR82")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 185.42 356.87 0)
 		(unit 1)
@@ -30629,83 +29209,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 497.84 355.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dc182d1a-dcdc-4953-88db-b02227ad3d50")
-		(property "Reference" "#PWR86"
-			(at 497.84 359.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 497.84 360.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 497.84 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 497.84 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 497.84 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3ebd1cc3-f44c-4469-abe2-2b58e7325e25")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "#PWR86")
 					(unit 1)
 				)
 			)
@@ -30981,95 +29484,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 497.84 353.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "df80e81e-979a-4886-b594-0a8a8c2ff5b3")
-		(property "Reference" "TP22"
-			(at 499.11 349.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5015"
-			(at 499.11 351.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
-			(at 497.84 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 497.84 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 497.84 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "5015"
-			(at 497.84 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "10c0da16-45ea-483e-bb91-bdd1c3e763d6")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP22")
 					(unit 1)
 				)
 			)
@@ -31659,84 +30073,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 477.52 330.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e92f59e0-31c0-46f3-9686-57de3390d949")
-		(property "Reference" "TP13"
-			(at 478.79 326.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 478.79 328.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 477.52 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 477.52 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 477.52 330.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d863b121-6329-46b9-9b93-ae280cd7ca58")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 132.08 191.77 0)
 		(unit 1)
@@ -32054,84 +30390,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR73")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 447.04 353.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f05e1920-f6d7-4888-8c9f-3c17fb89ed4b")
-		(property "Reference" "TP17"
-			(at 448.31 349.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP"
-			(at 448.31 351.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 447.04 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 447.04 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 447.04 353.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3cf870da-311f-4154-93b5-d3b0982a0806")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -32792,83 +31050,6 @@
 			(project "STM32G431kbt6"
 				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
 					(reference "#PWR29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 487.68 355.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f734078d-a502-4ea9-aef3-9edf1294877b")
-		(property "Reference" "#PWR85"
-			(at 487.68 359.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 487.68 360.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 487.68 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 487.68 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\""
-			(at 487.68 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d5d2b344-17c7-4529-8afe-bc8991e54651")
-		)
-		(instances
-			(project "STM32G431kbt6"
-				(path "/5b5b76d6-29b0-4e01-880b-d0dbb6e12185"
-					(reference "#PWR85")
 					(unit 1)
 				)
 			)
