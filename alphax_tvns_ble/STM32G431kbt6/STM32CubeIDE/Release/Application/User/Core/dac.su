@@ -1,0 +1,3 @@
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/dac.c:30:6:MX_DAC1_Init	56	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/dac.c:79:6:HAL_DAC_MspInit	40	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/dac.c:110:6:HAL_DAC_MspDeInit	0	static

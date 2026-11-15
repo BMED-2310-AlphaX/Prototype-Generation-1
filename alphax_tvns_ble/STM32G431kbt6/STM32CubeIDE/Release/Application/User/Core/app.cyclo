@@ -1,0 +1,17 @@
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:130:17:remaining_s	3
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:77:20:usb_present	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:78:20:button_down	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:80:20:rails	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:159:13:rails_down	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:213:13:send_status	8
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:151:13:emergency	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:85:17:adc_read	4
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:105:13:measure	2
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:193:13:end_session	3
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:69:5:__io_putchar	4
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:228:6:ble_on_command	13
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:248:6:ble_on_disconnect	2
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:256:6:app_gpio_irq	6
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:280:6:app_init	1
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:303:6:app_poll	31
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:371:6:HAL_GPIO_EXTI_Callback	1

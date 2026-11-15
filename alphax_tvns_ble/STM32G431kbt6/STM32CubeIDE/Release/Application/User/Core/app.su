@@ -1,0 +1,17 @@
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:130:17:remaining_s	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:77:20:usb_present	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:78:20:button_down	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:80:20:rails	0	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:159:13:rails_down	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:213:13:send_status	152	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:151:13:emergency	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:85:17:adc_read	48	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:105:13:measure	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:193:13:end_session	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:69:5:__io_putchar	0	static,ignoring_inline_asm
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:228:6:ble_on_command	48	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:248:6:ble_on_disconnect	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:256:6:app_gpio_irq	8	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:280:6:app_init	16	static
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:303:6:app_poll	16	static,ignoring_inline_asm
+C:/Users/shrim/Documents/GitHub/Prototype-Generation-1/alphax_tvns_ble/STM32G431kbt6/Core/Src/app.c:371:6:HAL_GPIO_EXTI_Callback	0	static
