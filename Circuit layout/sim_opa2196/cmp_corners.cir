@@ -1,0 +1,65 @@
+* NE5532 vs OPA2196: 5 mA, bridge tolerance corners x skin impedance
+* DAC: DAC_REF held at 1.5 V; DAC_STIM = 1.5 V + biphasic pulse
+VDREF dref 0 1.5
+VP1 dmid dref PULSE(0 {Vset} 1m 1u 1u {PW} {1/Freq})
+VP2 dst dmid PULSE(0 {-Vset} {1m+PW+IPG} 1u 1u {PW} {1/Freq})
+.param Freq=25 PW=250u IPG=50u Rsense=100
+.param Vset={Iamp/(1/Rsense+1/150k)}
+.param Cskin=470n Rtis=500
+* bridge tolerance corner: mm>0 pushes R2*R3 above R1*(R4+Rs) (toward negative output impedance)
+.param R1v={150k*(1-mm)} R2v={150k*(1+mm)} R3v={150k*(1+mm)} R4v={150k*(1-mm)}
+.lib UniversalOpAmp2.lib
+.include "OPAx196.LIB"
+.param Iamp=5m
+.step param mm list -0.0005 0 0.0005
+.step param Rskin list 10k 50k
+* ---- ne: NE5532 (UniversalOpAmp2)
+VPOS_ne vp_ne 0 14.56
+VNEG_ne vn_ne 0 -14.68
+R1_ne inn_ne dref {R1v}
+R2_ne out_ne inn_ne {R2v}
+R3_ne inp_ne dst {R3v}
+R4_ne drv_ne inp_ne {R4v}
+RS_ne drv_ne out_ne 100
+RBLEED_ne drv_ne 0 150k
+CBLK_ne drv_ne eblk_ne 2.2u
+RPMOS_ne eblk_ne elec_ne 50
+RSK1_ne elec_ne b1_ne {Rskin}
+CSK1_ne elec_ne b1_ne {Cskin}
+RBODY_ne b1_ne b2_ne {Rtis}
+RSK2_ne b2_ne 0 {Rskin}
+CSK2_ne b2_ne 0 {Cskin}
+RI_ne sn_ne drv_ne 1Meg
+CI_ne vs_ne sn_ne 1u
+RP_ne sp_ne 0 1Meg
+RINJ_ne vs_ne inp_ne 10Meg
+RINJ2_ne inn_ne 0 10Meg
+XA_ne inp_ne inn_ne vp_ne vn_ne out_ne level2 Avol=100k GBW=10Meg Slew=9Meg Ilimit=38m Rail=2 Vos=0.5m En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+XB_ne sp_ne sn_ne vp_ne vn_ne vs_ne level2 Avol=100k GBW=10Meg Slew=9Meg Ilimit=38m Rail=2 Vos=0.5m En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+* ---- op: OPA2196 (TI model)
+VPOS_op vp_op 0 14.56
+VNEG_op vn_op 0 -14.68
+R1_op inn_op dref {R1v}
+R2_op out_op inn_op {R2v}
+R3_op inp_op dst {R3v}
+R4_op drv_op inp_op {R4v}
+RS_op drv_op out_op 100
+RBLEED_op drv_op 0 150k
+CBLK_op drv_op eblk_op 2.2u
+RPMOS_op eblk_op elec_op 50
+RSK1_op elec_op b1_op {Rskin}
+CSK1_op elec_op b1_op {Cskin}
+RBODY_op b1_op b2_op {Rtis}
+RSK2_op b2_op 0 {Rskin}
+CSK2_op b2_op 0 {Cskin}
+RI_op sn_op drv_op 1Meg
+CI_op vs_op sn_op 1u
+RP_op sp_op 0 1Meg
+RINJ_op vs_op inp_op 10Meg
+RINJ2_op inn_op 0 10Meg
+XA_op inp_op inn_op vp_op vn_op out_op OPAx196
+XB_op sp_op sn_op vp_op vn_op vs_op OPAx196
+.tran 0 201m 0 1u
+.options plotwinsize=0
+.backanno
+.end
